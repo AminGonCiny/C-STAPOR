@@ -1,0 +1,113 @@
+/*#include <iostream>
+#include <stack>
+#include <queue>
+#include <list>
+using namespace std;
+int main(){
+	int n = 4;
+	int tablica[4];
+	for (int i = 0; i < n; i++) {
+		cout << "tablica[" << i << "]=";
+		cin >> tablica[i];
+	}
+	stack<int> stos;
+	stos.push(21);
+	stos.push(22);
+	stos.push(23);
+	stos.push(24);
+	stos.push(25);
+
+	stos.pop();
+	stos.pop();
+
+	while (!stos.empty()) {
+		cout << ' ' << stos.top();
+		stos.pop();
+	}
+	queue <int> kolejka;
+	int liczba;
+	do {
+		cout << "podaj liczbe (0 konczy wprowadzanie liczb)";
+		cin >> liczba;
+		if (liczba != 0)
+		{
+			kolejka.push(liczba);
+
+		}
+	}
+		while (liczba != 0);
+		cout << "lczby wyjete z kolejki: ";
+		while (kolejka.empty() == false)
+		{
+			cout << kolejka.front() << ",";
+			kolejka.pop();
+
+		}
+		cout << "\n";
+		list<int> lista;
+		int myints[] = { 16,2,77,29 };
+		list<int> l(myints, myints + sizeof(myints) / sizeof(int));
+		l.push_front(25);
+		l.push_back(13);
+		list<int>::iterator it = l.begin();
+		it++;
+		advance(it, 2);
+		l.insert(it, 42);
+		it = l.begin();
+		cout << "l = {";
+	while (it != l.end())
+	{
+		cout << (*it) << " ";
+		it++;
+	}
+	cout << "};\n";
+}
+*/
+/*
+#include <iostream>
+#include <vector>
+#include <list>
+#include <ctime>
+using namespace std;
+
+int main() {
+	int n = 10000;
+
+	cout << "Porownanie tablicy i listy polaczonej (prosto)\n\n";
+
+	clock_t start, end;
+	vector<int> tablica;
+	list<int> lista;
+
+	start = clock();
+	for (int i = 0; i < n; i++) {
+		tablica.push_back(i);
+	}
+	end = clock();
+	cout << "Wstawianie " << n << " elementow do tablicy: "
+		<< (end - start) / (double)CLOCKS_PER_SEC << " sekundy\n";
+
+	start = clock();
+	for (int i = 0; i < n; i++) {
+		lista.push_front(i); 
+	}
+	end = clock();
+	cout << "Wstawianie " << n << " elementow do listy: "
+		<< (end - start) / (double)CLOCKS_PER_SEC << " sekundy\n";
+
+	return 0;
+}
+           */
+
+
+		   //liczba dziesietna na dowolny uklad pozycyjny
+
+#include <iostream>
+#include <stack>
+#include <list>
+#include <fstream>
+using namespace std;
+int main()
+{
+	Kolejka
+}
